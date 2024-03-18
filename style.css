@@ -1,0 +1,56 @@
+html, body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#newGameForm{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: .5rem;
+}
+
+#submit {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+#scoreDisplay{
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+	font-size: larger;
+}
+
+#gameBoard{
+	margin: 2rem;
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+	width: 75vmin;
+	height: 75vmin;
+	background-color: black;
+	gap: 2px;
+}
+
+.space{
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 72pt;
+}
+
+.winner{
+	color: green;
+}
+
+#gameContainer{
+	text-align: center;
+}
